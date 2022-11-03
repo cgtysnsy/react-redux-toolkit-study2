@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import { CakeView } from "./store/cake/CakeView";
+import { IcecreamView } from "./store/icecream/IcecreamView";
+import { UserView } from "./store/user/UserView";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CakeView />
+      <IcecreamView />
+      <UserView />
     </div>
   );
 }
